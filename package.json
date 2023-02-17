@@ -1,0 +1,9 @@
+{
+  "name": "action-sheet-prototype",
+  "scripts": {
+    "start": "live-server --no-browser"
+  },
+  "dependencies": {
+    "live-server": "^1.2.2"
+  }
+}

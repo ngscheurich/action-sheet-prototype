@@ -1,0 +1,70 @@
+html,
+body  {
+  height: 100%;
+}
+
+body {
+  background-color: #ddd;
+  color: #222;
+  font: 16px/1.45 sans-serif;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  padding: 10px;
+}
+
+button {
+  background: none;
+  border: 0;
+  width: 100%;
+  cursor: pointer;
+  text-align: left;
+}
+
+@keyframes expand {
+ from { height: 0; }
+ to   { height: 50vh; }
+}
+
+@keyframes close {
+ from { height: 50vh; }
+ to   { height: 0; }
+}
+
+#action-sheet {
+  background-color: #fff;
+  box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 16px 16px 0px 0px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 50vh;
+  z-index: 1;
+  animation-name: expand;
+  animation-duration: 0.3s;
+}
+
+.action-sheet__list {
+  padding: 30px;
+}
+
+.action-sheet__button {
+  padding: 10px;
+  font-weight: bold;
+  color: teal;
+}
+
+#overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+}
